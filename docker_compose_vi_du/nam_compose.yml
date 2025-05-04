@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  nam-mysql:
+    image: "mysql:8.0"
+    environment:
+      MYSQL_ROOT_PASSWORD: password123
+      MYSQL_DATABASE: db_example
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  nam-wordpress:
+    image: "wordpress:latest"
+    environment:
+      WORDPRESS_DB_HOST: nam-mysql
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: password123
+      WORDPRESS_DB_NAME: db_example
+    ports:
+      - 8080:80
+    volumes:
+      - app-data:/var/www/html
+    depends_on:
+      - nam-mysql
+
+volumes:
+  mysql-data:
+  app-data:
+

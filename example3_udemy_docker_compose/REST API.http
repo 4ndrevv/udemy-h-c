@@ -1,0 +1,27 @@
+GET http://localhost:80/node
+
+POST http://localhost:80/node HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Khalid demo",
+    "description": "Welcome to the world!!!",
+    "published" : true
+}
+
+POST http://localhost:80/node HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Khalid demo_2",
+    "description": "Welcome to the world 2",
+    "published" : false
+}
+
+
+
+GET http://localhost:80/java/?id=2
+
+POST http://localhost:80/java/add?name=khalid_dinh&email=beensand97@gmail.com&age=21
+
+POST http://localhost:80/java/add?name=khalid_dinh_2&email=beensand97@gmail.com&age=23
