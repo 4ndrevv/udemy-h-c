@@ -5,3 +5,4 @@ export default function TabButtonV2({ label }) {
         </li>
     );
 }
+
