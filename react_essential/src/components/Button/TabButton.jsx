@@ -1,10 +1,10 @@
-export default function TabButton({children, onSelect, isSelected}) {
+export default function TabButton({children, isSelected, ...gia_tri_khac}) {
     
     return (
         <li>
             <button 
                 className={isSelected ? 'active' : undefined} 
-                onClick={onSelect}
+                {...gia_tri_khac}
             >
                 {children}
             </button>
