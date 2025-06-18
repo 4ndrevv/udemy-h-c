@@ -8,7 +8,7 @@ export default [
       'A framework to build user interfaces with help of imperative code.',
       'A library used for building mobile applications only.',
     ],
-    time: 5,
+    time: 10,
   },
   {
     id: 'q2',
@@ -30,7 +30,7 @@ export default [
       'A specific HTML version that was explicitly created for React.',
       'A tool for making HTTP requests in a React application.',
     ],
-    time: 2,
+    time: 10,
   },
   {
     id: 'q4',
@@ -41,7 +41,7 @@ export default [
       'By creating a file with a .jsx extension.',
       'By using the "new" keyword followed by the component name.',
     ],
-    time: 20,
+    time: 10,
   },
   {
     id: 'q5',
@@ -74,6 +74,6 @@ export default [
       'Using the && operator.',
       'Using an if-else statement.',
     ],
-    time: 2,
+    time: 20,
   },
 ];
